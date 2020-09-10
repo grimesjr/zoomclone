@@ -5,13 +5,18 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel $npm_package_parcel_entrypoints",
+    "devServerStart": "nodemon server.js",
     "build": "parcel build $npm_package_parcel_entrypoints"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "socket.io": "^2.3.0",
+    "uuid": "^8.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
@@ -23,6 +28,7 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0",
+    "nodemon": "^2.0.4",
     "parcel-bundler": "^1.12.4",
     "prettier": "^2.1.1"
   },
